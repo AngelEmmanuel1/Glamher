@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - GlamHer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://js.stripe.com/v3/"></script>
+</head>
+
+<header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-pink-600">GlamHer</h1>
+      <nav class="space-x-6 text-sm">
+        <a href="index.html" class="hover:text-pink-600 font-bold">Home</a>
+        <a href="shop.html" class="hover:text-pink-600">Shop</a>
+        <a href="about.html" class="hover:text-pink-600">About Us</a>
+        <button>
+          <a href="cart.html"><button id="cart-button" class="relative bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-pink-700">
+            Cart
+            <span id="cart-count" class="relative bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-pink-700 transition-all duration-300">0</span>
+          </button></a>
+      </nav>
+    </div>
+</header>
+
+<!-- checkout.html -->
+<body class="bg-pink-50 text-gray-800 font-sans">
+  <div class="max-w-xl mx-auto p-8 mt-10 bg-white rounded shadow">
+    <h2 class="text-2xl font-bold mb-6">Secure Checkout</h2>
+
+    <form id="payment-form">
+      <div class="mb-4">
+        <label class="block mb-1 font-semibold">Name</label>
+        <input type="text" id="name" class="w-full border rounded px-3 py-2" required>
+      </div>
+
+      <div class="mb-4">
+        <label class="block mb-1 font-semibold">Email</label>
+        <input type="email" id="email" class="w-full border rounded px-3 py-2" required>
+      </div>
+
+      <div class="mb-4">
+        <label class="block mb-1 font-semibold">Card Details</label>
+        <div id="card-element" class="border rounded px-3 py-2"></div>
+      </div>
+
+      <button id="submit" type="submit" class="bg-pink-600 text-white px-6 py-2 rounded hover:bg-pink-700 w-full">
+        <span id="button-text">Pay Now</span>
+      </button>
+      <div id="payment-message" class="mt-4 text-sm text-green-600 hidden"></div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</body>
+
+  
+  

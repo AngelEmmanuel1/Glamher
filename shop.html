@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shop - GlamHer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-pink-50 text-gray-800 font-sans">
+
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-pink-600">GlamHer</h1>
+      <nav class="space-x-6 text-sm">
+        <a href="index.html" class="hover:text-pink-600 font-bold">Home</a>
+        <a href="shop.html" class="hover:text-pink-600">Shop</a>
+        <a href="about.html" class="hover:text-pink-600">About Us</a>
+        <button>
+          <a href="cart.html"><button id="cart-button" class="relative bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-pink-700">
+            Cart
+            <span id="cart-count" class="relative bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-pink-700 transition-all duration-300">0</span>
+          </button></a>
+      </nav>
+    </div>
+  </header>
+ <!-- Shop Products -->
+<section class="max-w-7xl mx-auto px-4 py-16">
+  <h2 class="text-3xl font-bold text-center mb-10">Shop All Accessories</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <!-- Product Cards -->
+    <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg">
+      <img src="goldstatementnecklace.jpg" alt="Product 1" 
+           class="w-full h-48 sm:h-56 md: h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300">
+      <h4 class="mt-4 font-semibold">Gold Statement Necklace</h4>
+      <p class="text-pink-600">$45.00</p>
+      <button 
+  class="add-to-cart bg-pink-500 text-white px-5 py-3 rounded-lg hover:bg-pink-600 active:scale-95 transition-all duration-300 w-full shadow-md hover:shadow-lg"
+  data-id="101" 
+  data-name="Gold Statement Necklace" 
+  data-price="45.00">
+  Add to Cart
+</button>
+
+    </div>
+
+    <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg">
+      <img src="bohostack.jpg" alt="Product 2" 
+           class="w-full h-48 sm:h-56 md: h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300">
+      <h4 class="mt-4 font-semibold">Boho Stack Bracelets</h4>
+      <p class="text-pink-600">$19.99</p>
+      <button 
+      class="add-to-cart bg-pink-500 text-white px-5 py-3 rounded-lg hover:bg-pink-600 active:scale-95 transition-all duration-300 w-full shadow-md hover:shadow-lg"
+        data-id="102" 
+        data-name="Boho Stack Bracelets" 
+        data-price="19.99">
+        Add to Cart
+      </button>
+    </div>
+
+    <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg">
+      <img src="velvetbag.jpg" alt="Product 3" 
+           class="w-full h-48 sm:h-56 md: h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300">
+      <h4 class="mt-4 font-semibold">Velvet Clutch Bag</h4>
+      <p class="text-pink-600">$39.95</p>
+      <button 
+      class="add-to-cart bg-pink-500 text-white px-5 py-3 rounded-lg hover:bg-pink-600 active:scale-95 transition-all duration-300 w-full shadow-md hover:shadow-lg"
+        data-id="103" 
+        data-name="Velvet Clutch Bag" 
+        data-price="39.95">
+        Add to Cart
+      </button>
+    </div>
+    
+  </div>
+</section>
+
+<!-- About Us -->
+<section class="bg-pink-100 py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h3 class="text-3xl font-bold mb-6 text-pink-700">About Us</h3>
+      <p class="text-lg leading-relaxed text-gray-700">
+        At <span class="font-semibold text-pink-600">GlamHer</span>, we believe every woman deserves to shine. 
+        Our curated collection of accessories is carefully selected to add elegance, charm, and confidence to your everyday look.
+        Whether you're dressing up for a special occasion or adding a touch of sparkle to your casual outfit, we’re here to help you express your unique style.
+      </p>
+      <p class="mt-4 text-gray-600 text-sm">
+        Founded with love in 2025, GlamHer is proud to be a women-led brand committed to quality, style, and empowerment.
+      </p>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-pink-600 text-white py-10 mt-10">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+      <div>
+        <h4 class="font-bold mb-2">GlamHer</h4>
+        <p>Elegant accessories for every woman.</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-2">Quick Links</h4>
+        <ul>
+          <li><a href="shop.html" class="hover:underline">Shop</a></li>
+          <li><a href="#" class="hover:underline">About Us</a></li>
+          <li><a href="#" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-2">Follow Us</h4>
+        <p>Instagram | Facebook | Pinterest</p>
+      </div>
+    </div>
+    <div class="text-center mt-6 text-xs">&copy; 2025 GlamHer. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GlamHer - Women's Accessories</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-pink-50 text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-pink-600">GlamHer</h1>
+      <nav class="space-x-6 text-sm">
+        <a href="index.html" class="hover:text-pink-600 font-bold">Home</a>
+        <a href="shop.html" class="hover:text-pink-600">Shop</a>
+        <a href="about.html" class="hover:text-pink-600">About Us</a>
+      <button>
+        <a href="cart.html"><button id="cart-button" class="relative bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-pink-700">
+          Cart
+          <span id="cart-count" class="relative bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-pink-700 transition-all duration-300">0</span>
+        </button></a>
+      </nav>
+    </div>
+  </header>
+
+ 
+  <section class="bg-pink-100 py-20 text-center" style="background-image: url('your-image.jpg'); background-size: cover; background-position: center;">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4 text-black">Accessorize Your Every Day</h2>
+    <p class="text-lg mb-8 text-black">Discover our handpicked collection of elegant accessories</p>
+    <a href="shop.html" class="bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition duration-300">Shop Now</a>
+  </section>
+
+  <!-- Featured Products -->
+<section class="max-w-7xl mx-auto px-4 py-16">
+  <h3 class="text-3xl font-bold text-center mb-10">Featured Products</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    
+    <!-- Product Card -->
+    <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-all duration-300">
+      <div class="bg-white rounded-lg overflow-hidden">
+        <img src="pdearrings.png" alt="Pearl Drop Earrings" 
+             class="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300">
+      </div>
+      <h4 class="mt-4 font-semibold text-lg">Pearl Drop Earrings</h4>
+      <p class="text-pink-600 mb-4">$29.99</p>
+      <button 
+        class="add-to-cart bg-pink-500 text-white px-5 py-3 rounded-lg hover:bg-pink-600 active:scale-95 transition-all duration-300 w-full shadow-md hover:shadow-lg" 
+        data-id="201" 
+        data-name="Pearl Drop Earrings" 
+        data-price="29.99">
+        Add to Cart
+      </button>
+    </div>
+
+    <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-all duration-300">
+      <div class="bg-white rounded-lg overflow-hidden">
+        <img src="silverdropearrings.jpg" alt="Silver Drop Earrings" 
+             class="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300">
+      </div>
+      <h4 class="mt-4 font-semibold text-lg">Silver Drop Earrings</h4>
+      <p class="text-pink-600 mb-4">$29.99</p>
+      <button 
+        class="add-to-cart bg-pink-500 text-white px-5 py-3 rounded-lg hover:bg-pink-600 active:scale-95 transition-all duration-300 w-full shadow-md hover:shadow-lg" 
+        data-id="202" 
+        data-name="Silver Drop Earrings" 
+        data-price="29.99">
+        Add to Cart
+      </button>
+    </div>
+
+    <div class="bg-white p-4 rounded-lg shadow hover:shadow-lg transition-all duration-300">
+      <div class="bg-white rounded-lg overflow-hidden">
+        <img src="golddropearrings.jpeg" alt="Gold Drop Earrings" 
+             class="w-full h-64 object-cover rounded-lg hover:scale-105 transition-transform duration-300">
+      </div>
+      <h4 class="mt-4 font-semibold text-lg">Gold Drop Earrings</h4>
+      <p class="text-pink-600 mb-4">$29.99</p>
+      <button 
+        class="add-to-cart bg-pink-500 text-white px-5 py-3 rounded-lg hover:bg-pink-600 active:scale-95 transition-all duration-300 w-full shadow-md hover:shadow-lg" 
+        data-id="203" 
+        data-name="Gold Drop Earrings" 
+        data-price="29.99">
+        Add to Cart
+      </button>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Categories -->
+  <section class="bg-white py-16">
+    <h3 class="text-3xl font-bold text-center mb-10">Shop by Category</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-6xl mx-auto px-4">
+      <div class="text-center hover:scale-105 transition-all duration-300">
+        <img src="necklaces.jpg" alt="Necklaces" class="mx-auto rounded-full">
+        <p class="mt-2 font-semibold">Necklaces</p>
+      </div>
+      <div class="text-center hover:scale-105 transition-all duration-300">
+        <img src="rings.png" alt="Rings" class="mx-auto rounded-full">
+        <p class="mt-2 font-semibold">Rings</p>
+      </div>
+      <div class="text-center hover:scale-105 transition-all duration-300">
+        <img src="bracelet.jpg" alt="Bracelets" class="mx-auto rounded-full">
+        <p class="mt-2 font-semibold">Bracelets</p>
+      </div>
+      <div class="text-center hover:scale-105 transition-all duration-300">
+        <img src="bags.jpg" alt="Bags" class="mx-auto rounded-full">
+        <p class="mt-2 font-semibold">Bags</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-pink-600 text-white py-10 mt-10">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+      <div>
+        <h4 class="font-bold mb-2">GlamHer</h4>
+        <p>Elegant accessories for every woman.</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-2">Quick Links</h4>
+        <ul>
+          <li><a href="shop.html" class="hover:underline">Shop</a></li>
+          <li><a href="about.html" class="hover:underline">About Us</a></li>
+          <li><a href="" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-2">Follow Us</h4>
+        <div class="flex space-x-4">
+          <a href="https://www.instagram.com" class="hover:text-pink-400"><i class="fab fa-instagram"></i> Instagram</a>
+          <a href="https://www.facebook.com" class="hover:text-pink-400"><i class="fab fa-facebook"></i> Facebook</a>
+          <a href="https://www.Pinterest.com" class="hover:text-pink-400"><i class="fab fa-pinterest"></i> Pinterest</a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-6 text-xs">&copy; 2025 GlamHer. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

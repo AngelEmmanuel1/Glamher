@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - GlamHer</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-pink-50 text-gray-800 font-sans">
+
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-pink-600">GlamHer</h1>
+      <nav class="space-x-6 text-sm">
+        <a href="index.html" class="hover:text-pink-600 font-bold">Home</a>
+        <a href="shop.html" class="hover:text-pink-600">Shop</a>
+        <a href="about.html" class="hover:text-pink-600">About Us</a>
+        <button>
+          <a href="cart.html"><button id="cart-button" class="relative bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-pink-700">
+            Cart
+            <span id="cart-count" class="relative bg-pink-600 text-white px-4 py-2 rounded-md hover:bg-pink-700 transition-all duration-300">0</span>
+          </button></a>
+      </nav>
+    </div>
+  </header>
+  <!-- About Section -->
+  <section class="bg-pink-100 py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold text-pink-700 mb-6">Our Story</h2>
+      <p class="text-lg leading-relaxed text-gray-700">
+        GlamHer was born out of a passion for timeless style and everyday elegance. 
+        Founded in 2025 by a team of fashion-forward women, we’re dedicated to bringing you high-quality accessories 
+        that make you feel bold, beautiful, and empowered—because you deserve it.
+      </p>
+      <p class="mt-6 text-md text-gray-600">
+        From delicate jewelry to standout statement pieces and bags, each item in our collection is handpicked to reflect modern trends and classic charm. 
+        We’re more than a brand — we’re a movement that celebrates confidence, creativity, and femininity.
+      </p>
+    </div>
+  </section>
+
+  <!-- Mission / Vision -->
+  <section class="max-w-6xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-12 text-center md:text-left">
+    <div>
+      <h3 class="text-2xl font-bold text-pink-700 mb-4">Our Mission</h3>
+      <p class="text-gray-700">
+        To empower women to express their unique style through beautiful, affordable, and carefully crafted accessories.
+      </p>
+    </div>
+    <div>
+      <h3 class="text-2xl font-bold text-pink-700 mb-4">Our Vision</h3>
+      <p class="text-gray-700">
+        To be the go-to destination for modern women seeking confidence through fashion-forward accessories and intentional design.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-pink-600 text-white py-10 mt-10">
+    <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+      <div>
+        <h4 class="font-bold mb-2">GlamHer</h4>
+        <p>Elegant accessories for every woman.</p>
+      </div>
+      <div>
+        <h4 class="font-bold mb-2">Quick Links</h4>
+        <ul>
+          <li><a href="shop.html" class="hover:underline">Shop</a></li>
+          <li><a href="about.html" class="hover:underline">About Us</a></li>
+          <li><a href="#" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold mb-2">Follow Us</h4>
+        <p>Instagram | Facebook | Pinterest</p>
+      </div>
+    </div>
+    <div class="text-center mt-6 text-xs">&copy; 2025 GlamHer. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
